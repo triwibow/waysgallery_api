@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('uploads'));
 app.use(cors({
-  origin:'https://wagallery.netlify.app'
+  origin:'http://wagallery.netlify.app'
 }));
 
 
