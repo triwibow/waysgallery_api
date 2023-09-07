@@ -13,12 +13,22 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
+  "_production": {
     "username": "postgres",
     "password": "Y1JufnerHhxIb5FEw85p",
     "database": "railway",
     "host": "containers-us-west-147.railway.app",
-    "dialect": "postgres",
+    "dialect": "mysql",
+    "use_env_variable":"DATABASE_URL"
+  },
+  "production": {
+    "username": "root",
+    "password": "e3vl0l7lUPQWvmCQCejl",
+    "database": "railway",
+    "host": "containers-us-west-86.railway.app",
+    "dialect": "mysql",
     "use_env_variable":"DATABASE_URL"
   }
 }
+
+
