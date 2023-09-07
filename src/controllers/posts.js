@@ -6,7 +6,7 @@ const getPosts = async (req, res) => {
     try {
         const posts = await Post.findAll({
             attributes:{
-                exclude:['updatedAt','createdAt', 'UserId', 'userId'],
+                exclude:['updatedAt','createdAt', 'userId'],
             },
             order: [
                 ['id', 'DESC']
@@ -17,7 +17,7 @@ const getPosts = async (req, res) => {
                     model: Photo,
                     as:'photos',
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'postId'],
+                        exclude:['updatedAt','createdAt',],
                     },
                 },
                 {
