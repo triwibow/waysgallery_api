@@ -11,14 +11,14 @@ const getUser = async (req,res) =>{
                 id
             },
             attributes:{
-                exclude:['updatedAt','createdAt', 'UserId', 'userId', 'password'],
+                exclude:['updatedAt','createdAt', 'userId', 'password'],
             },
             include:[
                 {
                     model: Post,
                     as:'posts',
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'UserId', 'userId'],
+                        exclude:['updatedAt','createdAt', 'userId'],
                     },
                     include: {
                         model:Photo,
@@ -32,7 +32,7 @@ const getUser = async (req,res) =>{
                     model:Art,
                     as:"arts",
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'UserId', 'userId'],
+                        exclude:['updatedAt','createdAt', 'userId'],
                     },
                 }
             ]
@@ -223,14 +223,14 @@ const getUserById = async (req,res)=>{
                 id:userId
             },
             attributes:{
-                exclude:['updatedAt','createdAt', 'UserId', 'userId', 'password'],
+                exclude:['updatedAt','createdAt', 'userId', 'password'],
             },
             include:[
                 {
                     model: Post,
                     as:'posts',
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'UserId', 'userId'],
+                        exclude:['updatedAt','createdAt', 'userId'],
                     },
                     include: {
                         model:Photo,
@@ -244,7 +244,7 @@ const getUserById = async (req,res)=>{
                     model:Art,
                     as:"arts",
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'UserId', 'userId'],
+                        exclude:['updatedAt','createdAt', 'userId'],
                     },
                 }
             ]
