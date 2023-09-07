@@ -17,7 +17,7 @@ const getPosts = async (req, res) => {
                     model: Photo,
                     as:'photos',
                     attributes:{
-                        exclude:['updatedAt','createdAt',],
+                        exclude:['updatedAt','createdAt', 'postId', 'PostId'],
                     },
                 },
                 {
@@ -73,7 +73,7 @@ const getPostById = async (req,res) =>{
                     model: Photo,
                     as:'photos',
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'postId'],
+                        exclude:['updatedAt','createdAt', 'postId', 'PostId'],
                     },
                 },
                 {
@@ -170,7 +170,7 @@ const addPost = async (req, res) => {
                     model: Photo,
                     as:'photos',
                     attributes:{
-                        exclude:['updatedAt','createdAt', 'postId'],
+                        exclude:['updatedAt','createdAt', 'postId', 'PostId'],
                     },
                 }
            ]
