@@ -24,7 +24,7 @@ const getUser = async (req,res) =>{
                         model:Photo,
                         as:'photos',
                         attributes:{
-                            exclude:['updatedAt','createdAt', 'PostId', 'postId'],
+                            exclude:['updatedAt','createdAt', 'postId'],
                         },
                     }
                 },
@@ -236,7 +236,7 @@ const getUserById = async (req,res)=>{
                         model:Photo,
                         as:'photos',
                         attributes:{
-                            exclude:['updatedAt','createdAt', 'PostId', 'postId'],
+                            exclude:['updatedAt','createdAt', 'postId'],
                         },
                     }
                 },
