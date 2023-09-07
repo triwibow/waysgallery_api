@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
     avatar: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'user',
+    modelName: 'User',
   });
   return User;
 };
